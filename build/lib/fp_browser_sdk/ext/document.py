@@ -157,7 +157,7 @@ class Document(Module):
             "document.match-json": [item.to_dict() for item in self._match_list],
             "document.is-trusted": self._bool_to_int(self._is_trusted),
             "document.compat-mode": self._compat_mode.value,
-            "document.lastModified": self._lastModified,
+            "document.lastmodified": self._lastModified,
             "document.charset": self._charset,
             "document.video-support-mime-types-json": [item.to_dict() for item in self._video_support_mime_types],
         }

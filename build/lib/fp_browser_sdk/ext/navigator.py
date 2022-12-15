@@ -24,7 +24,7 @@ class Navigator(Module):
         self._java_enabled = False
         self._pdf_viewer_enabled = False
         self._bluetooth_availability = True
-        self._language = 'zh-CN'
+        self._locale = 'zh-CN'
         self._languages = 'zh-CN,zh'
         self._performance_type = None
         self._performance_redirect_count = None
@@ -52,7 +52,7 @@ class Navigator(Module):
             "navigator.java-enabled": self._bool_to_int(self._java_enabled),
             "navigator.pdf-viewer-enabled": self._bool_to_int(self._pdf_viewer_enabled),
             "navigator.bluetooth-availability": self._bool_to_int(self._bluetooth_availability),
-            "navigator.language": self._language,
+            "navigator.locale": self._locale,
             "navigator.languages": self._languages,
         }
 
@@ -180,11 +180,11 @@ class Navigator(Module):
         self._bluetooth_availability = value
         return self
 
-    def set_language(self, value: str):
+    def set_locale(self, value: str):
         """
-        用户偏好语言
+        用户语言环境
         """
-        self._language = value
+        self._locale = value
         return self
 
     def set_languages(self, value: str):

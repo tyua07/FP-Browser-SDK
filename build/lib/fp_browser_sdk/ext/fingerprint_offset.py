@@ -41,7 +41,7 @@ class FingerprintOffset(Module):
         """
         随机生成一个音频指纹 offset
         """
-        return self._random(0.999, 99.999)
+        return self._random(0.001, 0.999)
 
     def _random_canvas_offset(self):
         """
