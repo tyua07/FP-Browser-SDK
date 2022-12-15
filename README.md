@@ -80,8 +80,8 @@ navigator = Navigator() \
     .set_java_enabled(True) \
     .set_pdf_viewer_enabled(True) \
     .set_bluetooth_availability(False) \
-    .set_language("zh") \
-    .set_languages("zh,cn") \
+    .set_locale("zh-CN") \
+    .set_languages("zh-CN,zh") \
     .set_webdriver_status(False)
 
 clientHints = ClientHints() \

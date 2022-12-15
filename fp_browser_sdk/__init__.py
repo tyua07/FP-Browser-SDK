@@ -123,7 +123,6 @@ class ConfigConvertSetting(object):
             .set_java_enabled(self.config['javaEnabled'] == 1) \
             .set_pdf_viewer_enabled(self.config['pdfViewerEnabled'] == 1) \
             .set_bluetooth_availability(True) \
-            .set_language(self.config['language']) \
             .set_languages(','.join(self.config['languages'])) \
             .set_webdriver_status(False)
 
