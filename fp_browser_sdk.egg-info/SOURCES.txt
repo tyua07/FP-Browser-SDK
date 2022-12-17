@@ -33,6 +33,7 @@ fp_browser_sdk/ext/webrtc.py
 fp_browser_sdk/ext/permission_types/__init__.py
 fp_browser_sdk/ext/permission_types/permission_type.py
 fp_browser_sdk/ext/permission_types/permission_type_102.py
+fp_browser_sdk/ext/permission_types/permission_type_107.py
 fp_browser_sdk/ext/permission_types/permission_type_88.py
 fp_browser_sdk/ext/permission_types/permission_type_90.py
 fp_browser_sdk/ext/permission_types/permission_type_93.py

@@ -1,5 +1,6 @@
 from .permission_type import PermissionType
 from .permission_type_102 import PermissionType102
+from .permission_type_107 import PermissionType107
 from .permission_type_93 import PermissionType93
 from .permission_type_90 import PermissionType90
 from .permission_type_88 import PermissionType88
@@ -16,6 +17,8 @@ def _get_permission_type_dict(version: int) -> dict:
             return PermissionType90
         elif version == 88:
             return PermissionType88
+        elif version == 107:
+            return PermissionType107
 
     return PermissionType102
 
